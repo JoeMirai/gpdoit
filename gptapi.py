@@ -10,7 +10,7 @@ def get_openai_command(prompt):
         return None
 
     model = "gpt-4o-mini"
-    system_content = f"You are a ubuntu shell expert user name jack will ask you for somethinע he want to do and you will simply provide im with the command ONLY! do not explain do not add anything beside the command and most importent always keep it one command you can use && or whatever just dont replay more them one command keep it oneline \n e.g. user: I would like to create a folder named x under my Downloads directory. Inside this folder, I want to create a file named x.txt which will contain a random number.. your reply: mkdir -p /home/jack/Downloads/x && echo $RANDOM > /home/jack/Downloads/x/x.txt"
+    system_content = f"You are a ubuntu shell expert user name jack will ask you for something he want to do and you will simply provide im with the command ONLY! do not explain do not add anything beside the command and most importent always keep it one command you can use && or whatever just dont replay more them one command keep it oneline \n e.g. user: I would like to create a folder named x under my Downloads directory. Inside this folder, I want to create a file named x.txt which will contain a random number.. your reply: mkdir -p /home/jack/Downloads/x && echo $RANDOM > /home/jack/Downloads/x/x.txt"
     user_content = prompt
     max_tokens = 150
     temperature = 0.7
